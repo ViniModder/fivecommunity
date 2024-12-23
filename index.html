@@ -44,9 +44,7 @@
       </div>
     </form>
     <script>
-      let realKey="",leng=128,k=0,abc="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz",abcTab=[];for(let i=0;i<abc.length;i++)abcTab[i]=abc[i];let ran1="",ran2="",ran3="",ran4="",ran5="",ran6="";for(let i=0;i<leng;i++)ran1+=abcTab[Math.floor(Math.random()*abcTab.length)],ran2+=abcTab[Math.floor(Math.random()*abcTab.length)],ran3+=abcTab[Math.floor(Math.random()*abcTab.length)],ran4+=abcTab[Math.floor(Math.random()*abcTab.length)],ran5+=abcTab[Math.floor(Math.random()*abcTab.length)],ran6+=abcTab[Math.floor(Math.random()*abcTab.length)];const xorE=(sc,key)=>{const tabel=[];let k=0;for(let i=0;i<sc.length;i++){let byteValue=sc.charCodeAt(i)+key.charCodeAt(k);k++,tabel.push(byteValue),k==key.length&&(k=0)}return tabel},xorE2=(sc,key)=>{let tabel=[];for(let i=0;i<sc.length;i++){k+=1;let byte=sc.charCodeAt(i)+key.charCodeAt(k);tabel.push(byte),k==key.length&&(k=0)}return k=0,tabel};
-      const b64 = btoa(document.documentElement.outerHTML);
-      console.log(b64);
+      let rK="",l=128,k=0,a="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz",aT=[];for(let i=0;i<a.length;i++)aT[i]=a[i];let r1="",r2="",r3="",r4="",r5="",r6="";for(let i=0;i<l;i++)r1+=aT[Math.floor(Math.random()*aT.length)],r2+=aT[Math.floor(Math.random()*aT.length)],r3+=aT[Math.floor(Math.random()*aT.length)],r4+=aT[Math.floor(Math.random()*aT.length)],r5+=aT[Math.floor(Math.random()*aT.length)],r6+=aT[Math.floor(Math.random()*aT.length)];const xE=(s,k)=>{const t=[];let i=0;for(let j=0;j<s.length;j++){let b=s.charCodeAt(j)+k.charCodeAt(i);i++,t.push(b),i==k.length&&(i=0)}return t},xE2=(s,k)=>{let t=[];for(let j=0;j<s.length;j++){k+=1;let b=s.charCodeAt(j)+k.charCodeAt(k);t.push(b),k==k.length&&(k=0)}return k=0,t};const b64=btoa(document.documentElement.outerHTML);console.log(b64);
     </script>
   </body>
 </html>
